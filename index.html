@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <aside>
+            <button onclick="Ulozenie_planszy()">Pooooowiedzmy</button>
+        </aside>
+        <section>
+            <table>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="1"></td>
+                    <td><input type="text" class="sudoku_input" id="2"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="3"></td>
+                    <td><input type="text" class="sudoku_input" id="4"></td>
+                    <td><input type="text" class="sudoku_input" id="5"></td>
+                    <td class="br" ><input type="text" class="sudoku_input" id="6"></td>
+                    <td><input type="text" class="sudoku_input" id="7"></td>
+                    <td><input type="text" class="sudoku_input" id="8"></td>
+                    <td><input type="text" class="sudoku_input" id="9"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="11"></td>
+                    <td><input type="text" class="sudoku_input" id="12"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="13"></td>
+                    <td><input type="text" class="sudoku_input" id="14"></td>
+                    <td><input type="text" class="sudoku_input" id="15"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="16"></td>
+                    <td><input type="text" class="sudoku_input" id="17"></td>
+                    <td><input type="text" class="sudoku_input" id="18"></td>
+                    <td><input type="text" class="sudoku_input" id="19"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="21"></td>
+                    <td><input type="text" class="sudoku_input" id="22"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="23"></td>
+                    <td><input type="text" class="sudoku_input" id="24"></td>
+                    <td><input type="text" class="sudoku_input" id="25"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="26"></td>
+                    <td><input type="text" class="sudoku_input" id="27"></td>
+                    <td><input type="text" class="sudoku_input" id="28"></td>
+                    <td><input type="text" class="sudoku_input" id="29"></td>
+                </tr>
+                <tr>
+                    <td class="bt"><input type="text" class="sudoku_input" id="31"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="32"></td>
+                    <td class="btr"><input type="text" class="sudoku_input" id="33"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="34"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="35"></td>
+                    <td class="btr"><input type="text" class="sudoku_input" id="36"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="37"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="38"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="39"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="41"></td>
+                    <td><input type="text" class="sudoku_input" id="42"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="43"></td>
+                    <td><input type="text" class="sudoku_input" id="44"></td>
+                    <td><input type="text" class="sudoku_input" id="45"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="46"></td>
+                    <td><input type="text" class="sudoku_input" id="47"></td>
+                    <td><input type="text" class="sudoku_input" id="48"></td>
+                    <td><input type="text" class="sudoku_input" id="49"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="51"></td>
+                    <td><input type="text" class="sudoku_input" id="52"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="53"></td>
+                    <td><input type="text" class="sudoku_input" id="54"></td>
+                    <td><input type="text" class="sudoku_input" id="55"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="56"></td>
+                    <td><input type="text" class="sudoku_input" id="57"></td>
+                    <td><input type="text" class="sudoku_input" id="58"></td>
+                    <td><input type="text" class="sudoku_input" id="59"></td>
+                </tr><tr>
+                    <td class="bt"><input type="text" class="sudoku_input" id="61"></td>
+                    <td class="bt" ><input type="text" class="sudoku_input" id="62"></td>
+                    <td class="btr"><input type="text" class="sudoku_input" id="63"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="64"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="65"></td>
+                    <td class="btr"><input type="text" class="sudoku_input" id="66"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="67"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="68"></td>
+                    <td class="bt"><input type="text" class="sudoku_input" id="69"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="71"></td>
+                    <td><input type="text" class="sudoku_input" id="72"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="73"></td>
+                    <td><input type="text" class="sudoku_input" id="74"></td>
+                    <td><input type="text" class="sudoku_input" id="75"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="76"></td>
+                    <td><input type="text" class="sudoku_input" id="77"></td>
+                    <td><input type="text" class="sudoku_input" id="78"></td>
+                    <td><input type="text" class="sudoku_input" id="79"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="sudoku_input" id="81"></td>
+                    <td><input type="text" class="sudoku_input" id="82"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="83"></td>
+                    <td><input type="text" class="sudoku_input" id="84"></td>
+                    <td><input type="text" class="sudoku_input" id="85"></td>
+                    <td class="br"><input type="text" class="sudoku_input" id="86"></td>
+                    <td><input type="text" class="sudoku_input" id="87"></td>
+                    <td><input type="text" class="sudoku_input" id="88"></td>
+                    <td><input type="text" class="sudoku_input" id="89"></td>
+                </tr>
+            </table>
+        </section>
+        <p id="test"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

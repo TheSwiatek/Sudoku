@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+    font-size: 3vw;
+    background: linear-gradient(to top, gray, white);
+}
+
+main {
+    width: 98vw;
+    height: 50vw;
+
+}
+
+section {
+    float: right;
+    width: 50VW;
+    margin-right: 24vw;
+
+}
+
+aside {
+    width: 15vw;
+    height: 100%;
+    float: left;
+
+    margin-left: 4vw;
+    text-align: center;
+}
+
+button {
+    width: 90%;
+    height: 85%;
+    border-radius: 4px;
+    margin: 5%;
+    box-shadow: 1px 1px 1px gray;
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+table {
+    width: 90%;
+    height: 45vw;
+    border: 3px solid rgb(82, 81, 81);
+    border-spacing: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+tr {
+    width:100%;
+    height: 11%;
+    border-spacing: 0px;
+}
+
+td {
+    text-align: center;
+    border-spacing: 0px;
+    margin: 0;
+}
+
+.br {
+    border-right: 3px solid rgb(82, 81, 81);
+
+}
+
+.bl {
+    border-left: 3px solid rgb(82, 81, 81);
+}
+
+.bb {
+    border-bottom: 3px solid rgb(82, 81, 81);
+}
+
+.bt {
+    border-top: 3px solid rgb(82, 81, 81);
+}
+
+.btr {
+    border-top: 3px solid rgb(82, 81, 81);
+    border-right: 3px solid rgb(82, 81, 81);
+}
+
+td {
+    border: 1px solid gray;
+}
+
+.sudoku_input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    text-align: center;
+    font-size: 3vw;
+}
